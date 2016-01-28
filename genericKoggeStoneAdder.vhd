@@ -32,6 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity genericKoggeStoneAdder is
+    -- defines the input/output width (width = 2 ^ depth)
     Generic ( DEPTH     : positive := 1);
     Port ( A            : in  STD_LOGIC_VECTOR (2**DEPTH-1 downto 0);
            B            : in  STD_LOGIC_VECTOR (2**DEPTH-1 downto 0);
